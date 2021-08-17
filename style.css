@@ -3,3 +3,46 @@
     margin: 0;
     box-sizing: 0;
 }
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.menu_button{
+    position: relative;
+    width: 2rem;
+    height: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+ 
+}
+
+.layer_button{
+    width: 80%;
+    height: 3px;
+    background-color: black;
+    border-radius: 1rem;
+}
+
+.layer_button::before,
+.layer_button::after{
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 3px;
+    background-color: black;
+    border-radius: 1rem;
+}
+
+.layer_button::before{
+    transform: translateY(-.5rem);
+}
+
+.layer_button::after{
+    transform: translateY(.5rem);
+}

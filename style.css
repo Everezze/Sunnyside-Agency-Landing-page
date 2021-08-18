@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: "Barlow", sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Fraunces";
+}
+
 /* HERO IMAGE AND NAVBAR */
 
 .hero{
@@ -63,8 +71,19 @@
 
  /* TESTIMONIALS SECTION */
 
+.testimonial{
+    padding: 3rem 2rem;
+}
+
+.testimonial__title{
+    text-align: center;
+    padding-bottom: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
 .card{
-    margin: 2rem 0;
+    padding: 2rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -85,4 +104,13 @@
     text-align: center;
     line-height: 1.6;
     margin: 2.5rem 0;
+}
+
+.card__names{
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+
+.card__occupation{
+    text-transform: capitalize;
 }

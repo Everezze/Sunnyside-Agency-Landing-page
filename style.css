@@ -1,17 +1,24 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
 }
 
-header{
+.hero{
+    background-image: url(./images/mobile/image-header.jpg);
+    height: 600px;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
 }
 
-.menu_button{
+.hamburger{
     position: relative;
     width: 2rem;
     height: 1.2rem;
@@ -22,15 +29,15 @@ header{
  
 }
 
-.layer_button{
+.hamburger__buttonStripes{
     width: 80%;
     height: 3px;
     background-color: black;
     border-radius: 1rem;
 }
 
-.layer_button::before,
-.layer_button::after{
+.hamburger__buttonStripes::before,
+.hamburger__buttonStripes::after{
     content: '';
     position: absolute;
     width: 80%;
@@ -39,10 +46,14 @@ header{
     border-radius: 1rem;
 }
 
-.layer_button::before{
+.hamburger__buttonStripes::before{
     transform: translateY(-.5rem);
 }
 
-.layer_button::after{
+.hamburger__buttonStripes::after{
     transform: translateY(.5rem);
+}
+
+.Image__images{
+    width: 100%;
 }

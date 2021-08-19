@@ -166,10 +166,14 @@ a{
 /* SPEECH SECTION */
 
 .speech{
+    padding: 3.5rem 1.5rem;
+}
+
+.speech__container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3.5rem 1.5rem;
+    max-width: 450px;
 }
 
 .speech__title{
@@ -323,5 +327,13 @@ a{
 
     .gallery__container{
         width: 25%;
+    }
+
+    .speech__container{
+        align-items: flex-start;
+    }
+
+    .speech__description,.speech__title{
+        text-align: left;
     }
 }

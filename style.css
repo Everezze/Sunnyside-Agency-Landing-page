@@ -109,7 +109,8 @@ a{
  /* TESTIMONIALS SECTION */
 
 .testimonial{
-    padding: 3rem 2rem;
+    /* padding: 3rem 2rem; */
+    padding: 8% 2%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -128,7 +129,7 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 385px;
+    max-width: 330px;
 }
 
 .card__imageContainer{
@@ -300,3 +301,27 @@ a{
 .socialMedia__pinterest{
     background-image: url("./images/icon-pinterest.svg");
 } */
+
+@media screen and (min-width: 769px){
+    main{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .Image,.speech{
+        width: 50%;
+    }
+
+    .testimonial section{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .card{
+        margin: 0 2rem;
+    }
+
+    .gallery__container{
+        width: 25%;
+    }
+}

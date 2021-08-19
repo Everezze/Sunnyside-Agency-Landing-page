@@ -79,6 +79,8 @@ h1,h2,h3,h4,h5,h6{
     bottom: 10%;
     /* left: 15%; */
     text-align: center;
+    max-width: 375px;
+    /* margin: auto; */
 }
 
 .Image__title{
@@ -103,6 +105,9 @@ h1,h2,h3,h4,h5,h6{
 
 .testimonial{
     padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .testimonial__title{
@@ -118,6 +123,7 @@ h1,h2,h3,h4,h5,h6{
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 385px;
 }
 
 .card__imageContainer{
@@ -142,11 +148,13 @@ h1,h2,h3,h4,h5,h6{
     margin-bottom: 1rem;
     text-transform: capitalize;
     color: hsl(212, 27%, 19%);
+    font-size: 1.2rem;
 }
 
 .card__occupation{
     text-transform: capitalize;
     color: hsl(210, 4%, 67%);
+    font-size: 0.9rem;
 }
 
 /* SPEECH SECTION */
@@ -181,14 +189,54 @@ h1,h2,h3,h4,h5,h6{
     letter-spacing: 1px;
     font-family: 'Fraunces';
     color: hsl(212, 27%, 19%);
+    position: relative;
 }
-
+/* 
 .speech--redlink{
-    /* border-bottom: 5px solid hsl(7, 99%, 70%); */
+    border-bottom: 5px solid hsl(7, 99%, 70%);
     box-shadow: 0 -5px 0 hsl(7, 99%, 70%) inset;
 }
 
 .speech--yellowlink{
-    /* border-bottom: 5px solid hsl(51, 100%, 49%); */
+    border-bottom: 5px solid hsl(51, 100%, 49%);
     box-shadow: 0 -5px 0 hsl(51, 100%, 49%) inset;
+} */
+
+.speech--redlink::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: hsl(7, 99%, 70%);
+    width: 100%;
+    height: 6px;
+    z-index: -1;
+    border-radius: 1rem;
+}
+
+.speech--yellowlink::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: hsl(51, 100%, 49%);
+    width: 100%;
+    height: 6px;
+    z-index: -1;
+    border-radius: 1rem;
+}
+
+/* GALLERY OF IMAGES */
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery__container{
+    width: 50%;
+}
+
+.gallery__images{
+    width: 100%;
 }

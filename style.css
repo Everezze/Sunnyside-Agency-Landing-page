@@ -64,10 +64,40 @@ h1,h2,h3,h4,h5,h6{
     transform: translateY(.5rem);
 }
 
+/* IMAGES SECTION WITH TEXT */
+
+.Image{
+    position: relative;
+}
+
 .Image__images{
     width: 100%;
 }
 
+.Image__content{
+    position: absolute;
+    bottom: 10%;
+    /* left: 15%; */
+    text-align: center;
+}
+
+.Image__title{
+    padding: 2rem 0;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.Image__description{
+    line-height: 1.7;
+}
+
+.Image__content--greencolor{
+    color: hsl(167, 40%, 24%);
+}
+
+.Image__content--bluecolor{
+    color: hsl(198, 62%, 26%);
+}
 
  /* TESTIMONIALS SECTION */
 
@@ -105,11 +135,13 @@ h1,h2,h3,h4,h5,h6{
     text-align: center;
     line-height: 1.6;
     margin: 2.5rem 0;
+    color: hsl(213, 9%, 39%);
 }
 
 .card__names{
     margin-bottom: 1rem;
     text-transform: capitalize;
+    color: hsl(212, 27%, 19%);
 }
 
 .card__occupation{
@@ -129,6 +161,7 @@ h1,h2,h3,h4,h5,h6{
 .speech__title{
     font-size: 2rem;
     text-align: center;
+    color: hsl(212, 27%, 19%);
 }
 
 .speech__title::first-letter{
@@ -139,7 +172,7 @@ h1,h2,h3,h4,h5,h6{
     padding: 1.5rem 0;
     text-align: center;
     line-height: 1.6;
-    color: hsl(210, 4%, 67%);
+    color: hsl(232, 10%, 55%);
 }
 
 .speech__link{
@@ -147,4 +180,15 @@ h1,h2,h3,h4,h5,h6{
     text-transform: uppercase;
     letter-spacing: 1px;
     font-family: 'Fraunces';
+    color: hsl(212, 27%, 19%);
+}
+
+.speech--redlink{
+    /* border-bottom: 5px solid hsl(7, 99%, 70%); */
+    box-shadow: 0 -5px 0 hsl(7, 99%, 70%) inset;
+}
+
+.speech--yellowlink{
+    /* border-bottom: 5px solid hsl(51, 100%, 49%); */
+    box-shadow: 0 -5px 0 hsl(51, 100%, 49%) inset;
 }

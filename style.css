@@ -12,6 +12,11 @@ h1,h2,h3,h4,h5,h6{
     font-family: "Fraunces";
 }
 
+a{
+    text-decoration: none;
+}
+
+
 /* HERO IMAGE AND NAVBAR */
 
 .hero{
@@ -240,3 +245,58 @@ h1,h2,h3,h4,h5,h6{
 .gallery__images{
     width: 100%;
 }
+
+/* FOOTER SECTION */
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0;
+    color: hsl(168, 34%, 41%);
+    background-color: hsl(168, 34%, 75%);
+}
+
+.footer__title{
+    font-size: 2.1rem;
+    font-weight: 800;
+}
+
+.AboutUs{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 2.5rem 0 5rem;
+}
+
+.AboutUs a{
+    margin: 0 2rem;
+    color: hsl(168, 34%, 41%);
+}
+
+.socialMedia{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialMedia a{
+    padding: 0 1rem;
+}
+
+/* .socialMedia__fb{
+    background-image: url("./images/icon-facebook.svg");
+}
+
+.socialMedia__insta{
+    background-image: url("./images/icon-instagram.svg");
+}
+
+.socialMedia__twitter{
+    background-image: url("./images/icon-twitter.svg");
+}
+
+.socialMedia__pinterest{
+    background-image: url("./images/icon-pinterest.svg");
+} */

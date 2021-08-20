@@ -71,6 +71,25 @@ a{
     transform: translateY(.5rem);
 }
 
+.header__description{
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__description img{
+    margin-top: 3rem;
+}
+
+.header__description h2{
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: .5rem;
+}
+
 /* IMAGES SECTION WITH TEXT */
 
 .Image{
@@ -385,5 +404,13 @@ a{
 
     .hamburger{
         display: none;
+    }
+
+    .header__description h2{
+        font-size: 3rem;
+    }
+
+    .header__description img{
+        margin-top: 5rem;
     }
 }

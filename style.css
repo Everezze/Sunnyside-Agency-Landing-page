@@ -44,6 +44,7 @@ a{
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    position: relative;
 }
 
 .hamburger__buttonStripes{
@@ -369,6 +370,39 @@ a{
 #contact:hover{
     background-color: hsla(0, 0%, 100%, 0.3);
     color: hsl(0, 0%, 100%);
+}
+
+/* STYLES FOR HAMBURGER MENU ITEMS (MOBILE)*/
+
+.hamburger__links{
+    list-style: none;
+    /* display: none; */
+    position: absolute;
+    right: 0;
+    top: 60px;
+    width: 340px;
+    text-align: center;
+    background-color: hsl(0, 0%, 100%);
+    padding: 3rem 1rem 2rem;
+    font-size: 1.2rem;
+    clip-path: polygon(0% 10%, 90% 10%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.hamburger__links a{
+    color: hsl(232, 10%, 55%);
+    padding: 1rem;
+    padding-bottom: 1.5rem;
+    display: inline-block;
+}
+
+#hamburger__links--yellow{
+    color: hsl(212, 27%, 19%);
+    background-color: hsl(51, 100%, 49%);
+    text-transform: uppercase;
+    font-family: 'Fraunces';
+    border-radius: 2rem;
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
 }
 
 @media screen and (min-width: 769px){

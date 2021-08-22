@@ -376,7 +376,7 @@ a{
 
 .hamburger__links{
     list-style: none;
-    /* display: none; */
+    display: none;
     position: absolute;
     right: 0;
     top: 60px;
@@ -403,6 +403,10 @@ a{
     border-radius: 2rem;
     padding: 1rem 1.5rem;
     margin-top: 1rem;
+}
+
+.hamburger__links.active{
+    display: block;
 }
 
 @media screen and (min-width: 769px){

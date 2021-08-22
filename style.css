@@ -227,6 +227,7 @@ a{
     font-family: 'Fraunces';
     color: hsl(212, 27%, 19%);
     position: relative;
+    cursor: pointer;
 }
 /* 
 .speech--redlink{
@@ -306,6 +307,10 @@ a{
     color: hsl(168, 34%, 41%);
 }
 
+.AboutUs a:hover{
+    color: hsl(0, 0%, 100%);
+}
+
 .socialMedia{
     list-style: none;
     display: flex;
@@ -314,7 +319,15 @@ a{
 }
 
 .socialMedia a{
-    padding: 0 1rem;
+    margin: 0 1rem;
+}
+
+.socialMedia svg{
+    fill: #2C7566;
+}
+
+.socialMedia svg:hover{
+    fill: hsl(0, 0%, 100%);
 }
 
 /* .socialMedia__fb{
@@ -351,6 +364,11 @@ a{
     font-family: 'Fraunces';
     padding: 1rem 1.5rem;
     border-radius: 2rem;
+}
+
+#contact:hover{
+    background-color: hsla(0, 0%, 100%, 0.3);
+    color: hsl(0, 0%, 100%);
 }
 
 @media screen and (min-width: 769px){

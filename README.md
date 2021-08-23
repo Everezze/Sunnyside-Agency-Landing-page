@@ -1,6 +1,6 @@
 # Frontend Mentor - Sunnyside agency landing page solution
 
-This is a solution to the [Sunnyside agency landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef).
+This is a solution to the ![Sunnyside agency landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef)
 
 ## Table of contents
 
@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Screenshot
 
-![My outcome of the landing page challenge](./Sunnyside_agency_challenge.jpg)
+![My outcome of the landing page challenge](./Sunnyside_agency_challenge.png)
 ### Links
 
 - Solution URL: [The github](https://github.com/Everezze/Sunnyside-Agency-Landing-page)
